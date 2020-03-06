@@ -19,14 +19,14 @@ Gitea username and password can be either passed as params, or set as environmen
 
 Params:
 ```shell script
-./gitea-release-attach -u username -p password ...
+/usr/bin/gitea-release-attach -u username -p password ...
 ``` 
 
 Environment:
 ```shell script
 export GITEA_USER=username
 export GITEA_PASS=password
-./gitea-release-attach ...
+/usr/bin/gitea-release-attach ...
 ``` 
 
 These are some other params this tool supports:

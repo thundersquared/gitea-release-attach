@@ -11,6 +11,6 @@ RUN cd /go/app && \
 FROM alpine:latest
 
 # Copy bin from builder
-COPY --from=builder /go/app/gitea-release-attach .
+COPY --from=builder /go/app/gitea-release-attach /usr/bin/gitea-release-attach
 
-CMD [ "./gitea-release-attach" ]
+CMD [ "/usr/bin/gitea-release-attach" ]
